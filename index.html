@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Topics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Trending Topics</h1>
+        <select id="categorySelect" class="category-dropdown">
+            <option value="technology">Technology</option>
+            <option value="finance">Business & Finance</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="health">Health</option>
+            <option value="science">Science</option>
+            <option value="sports">Sports</option>
+        </select>
+    </nav>
+
+    <section class="hero">
+        <h2>Discover What's Trending</h2>
+        <p>Stay updated with the latest trends across different categories</p>
+    </section>
+    
+    <main>
+        <div id="loadingSpinner" class="loading-spinner hidden">
+            <div class="spinner"></div>
+            <span class="loading-text">Loading trending topics...</span>
+        </div>
+        <div id="errorMessage" class="error-message hidden"></div>
+        <div id="topicsContainer" class="topics-grid"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
